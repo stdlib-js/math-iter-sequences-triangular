@@ -188,6 +188,20 @@ while ( true ) {
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/math/iter/sequences/squared-triangular`][@stdlib/math/iter/sequences/squared-triangular]</span><span class="delimiter">: </span><span class="description">create an iterator which generates a sequence of squared triangular numbers.</span>
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -250,6 +264,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [triangular-number]: https://en.wikipedia.org/wiki/Triangular_number
 
 [@stdlib/math/base/special/binomcoef]: https://github.com/stdlib-js/math-base-special-binomcoef
+
+<!-- <related-links> -->
+
+[@stdlib/math/iter/sequences/squared-triangular]: https://github.com/stdlib-js/math-iter-sequences-squared-triangular
+
+<!-- </related-links> -->
 
 </section>
 
