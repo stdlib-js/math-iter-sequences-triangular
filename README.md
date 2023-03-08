@@ -32,10 +32,14 @@ The [triangular numbers][triangular-number] are the integer sequence
 
 <!-- <equation class="equation" label="eq:triangular_numbers_sequence" align="center" raw="0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, \ldots" alt="Triangular number sequence"> -->
 
-<div class="equation" align="center" data-raw-text="0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, \ldots" data-equation="eq:triangular_numbers_sequence">
+```math
+0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, \ldots
+```
+
+<!-- <div class="equation" align="center" data-raw-text="0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55, 66, \ldots" data-equation="eq:triangular_numbers_sequence">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7000a1b5cd08bb73f2dfe04976524042ab3b580d/lib/node_modules/@stdlib/math/iter/sequences/triangular/docs/img/equation_triangular_numbers_sequence.svg" alt="Triangular number sequence">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -45,10 +49,14 @@ starting at the 0th [triangular number][triangular-number].
 
 <!-- <equation class="equation" label="eq:triangular_numbers" align="center" raw="T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}" alt="Triangular number formulas"> -->
 
-<div class="equation" align="center" data-raw-text="T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}" data-equation="eq:triangular_numbers">
+```math
+T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="T_n = \sum_{i=1}^{n} i = 1 + 2 + 3 + \ldots + n = \frac{n(n+1)}{2} = \binom{n+1}{2}" data-equation="eq:triangular_numbers">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@7000a1b5cd08bb73f2dfe04976524042ab3b580d/lib/node_modules/@stdlib/math/iter/sequences/triangular/docs/img/equation_triangular_numbers.svg" alt="Triangular number formulas">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -60,38 +68,30 @@ where the last formula corresponds to a [binomial coefficient][@stdlib/math/base
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-sequences-triangular
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterTriangularSeq = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterTriangularSeq = require( 'path/to/vendor/umd/math-iter-sequences-triangular/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterTriangularSeq;
-})();
-</script>
+var iterTriangularSeq = require( '@stdlib/math-iter-sequences-triangular' );
 ```
 
 #### iterTriangularSeq( \[options] )
@@ -172,13 +172,8 @@ var bool = it.next().done;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var iterTriangularSeq = require( '@stdlib/math-iter-sequences-triangular' );
 
 // Create an iterator:
 var opts = {
@@ -195,11 +190,6 @@ while ( true ) {
     }
     console.log( v.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -281,7 +271,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -301,11 +291,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [triangular-number]: https://en.wikipedia.org/wiki/Triangular_number
 
-[@stdlib/math/base/special/binomcoef]: https://github.com/stdlib-js/math-base-special-binomcoef/tree/umd
+[@stdlib/math/base/special/binomcoef]: https://github.com/stdlib-js/math-base-special-binomcoef
 
 <!-- <related-links> -->
 
-[@stdlib/math/iter/sequences/squared-triangular]: https://github.com/stdlib-js/math-iter-sequences-squared-triangular/tree/umd
+[@stdlib/math/iter/sequences/squared-triangular]: https://github.com/stdlib-js/math-iter-sequences-squared-triangular
 
 <!-- </related-links> -->
 
