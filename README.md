@@ -86,6 +86,11 @@ where the last formula corresponds to a [binomial coefficient][@stdlib/math/base
 ## Usage
 
 ```javascript
+import iterTriangularSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-iter-sequences-triangular/tags). For example,
+
+```javascript
 import iterTriangularSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@v0.2.3-esm/index.mjs';
 ```
 
@@ -173,7 +178,7 @@ var bool = it.next().done;
 <body>
 <script type="module">
 
-import iterTriangularSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@v0.2.3-esm/index.mjs';
+import iterTriangularSeq from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@esm/index.mjs';
 
 // Create an iterator:
 var opts = {
