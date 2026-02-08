@@ -88,7 +88,7 @@ where the last formula corresponds to a [binomial coefficient][@stdlib/math/base
 To use in Observable,
 
 ```javascript
-iterTriangularSeq = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@umd/browser.js' )
+iterTriangularSeq = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@v0.2.3-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -100,7 +100,7 @@ var iterTriangularSeq = require( 'path/to/vendor/umd/math-iter-sequences-triangu
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@v0.2.3-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -195,7 +195,7 @@ var bool = it.next().done;
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-sequences-triangular@v0.2.3-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
